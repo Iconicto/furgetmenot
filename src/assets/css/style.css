@@ -1,0 +1,149 @@
+@import url('https://unpkg.com/bulma@0.8.0/css/bulma.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css');
+@import url('./helpers.css');
+@import url('./animate.min.css');
+body{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+strong{
+  color: #dc3c59 !important
+}
+.brand {
+  padding: 5px;
+  border-radius: 10px;
+}
+.is-primary {
+  background-color: #dc3c59 !important;
+  color: #fff !important;
+}
+.search-block {
+  box-shadow: -7px 7px 15px -8px rgba(97, 94, 97, 1);
+  border-radius: 10px;
+  padding: 2rem;
+}
+.result-block {
+  flex-direction: row;
+  border: 1px solid #dc3c59;
+  border-radius: 10px;
+  padding: 1rem;
+}
+.inline {
+  display: inline;
+}
+.alignsenf {
+  align-self: center;
+}
+.text-primary{
+  color: #dc3c59 !important;
+}
+.error-block{
+  color: red !important;
+  font-size: smaller;
+}
+.tags{
+  margin-top: 0.5rem
+}
+.item-des{
+  text-align: justify
+}
+.text-black{
+  color: #000 !important
+}
+.ti-tag{
+  background-color:#dc3c59 !important ;
+}
+.bannerimg{
+  overflow: hidden;
+}
+.welcome-bar{
+  align-items: center
+}
+.home-tags{
+  justify-content: center;
+}
+.home-icon{
+  margin-right: 5px
+}
+.about-des{
+  text-align: justify;
+}
+.about{
+  align-items: center;
+}
+footer{
+  padding-top: 3rem !important;
+  padding-bottom: 1rem !important;
+  background-color: #fff !important;
+}
+.level-icon{
+  font-size: 3rem;
+}
+.level-gh{
+  height: 100px;
+}
+.level-dev{
+  height: 100px;
+  border-radius: 10px;
+}
+.level-email{
+  background-color: #64c37d !important;
+}
+.btn-dev{
+  background-image: linear-gradient(to bottom right, #f18e8e, #fce08a, #f3f095,#55c1ae, #88aedc,#f4b3ce,#f18e8e, #fce08a, #f3f095, #55c1ae,#88aedc, #f4b3ce);
+  color: #000000 !important
+}
+.conditions{
+  text-align: left;
+}
+.self-align-center{
+  align-self: center !important
+}
+.setails-fulldes{
+  text-align: justify
+}
+.titlebox{
+  background-color: #ffdd57;
+}
+.searchfail{
+  color: #dc3c59 !important;
+}
+.searchfail-img{
+  height: 300px
+}
+
+
+
+
+
+@media only screen and (max-width: 769px) {
+  /* .column{
+    padding: 3rem !important
+  } */
+  form{
+    padding: 3rem
+  }
+}
+@media only screen and (max-width: 770px) {
+  .opname,
+  .oploc {
+    text-align: center !important;
+  }
+}
+@media only screen and (max-width: 514px) {
+  .find-btn{
+    margin-bottom: 1rem
+  }
+}
+@media only screen and (max-width: 533px) {
+  .media-mobile{
+    display: block !important
+  }
+  .media-name{
+    font-size: 1rem !important;
+    margin-top: 1rem;
+  }
+  .media-by{
+    font-size: 0.8rem !important;
+  }
+}
