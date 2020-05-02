@@ -21,11 +21,6 @@
                         <h1 class="title is-6 inline ml-1 oploc">{{ location }}</h1>
                     </div>
                     <p class="mt-1 item-des">{{ description }}</p>
-                    <div class="tags">
-                        <span class="tag is-info" v-if="tags.t1">#{{ tags.t1 }}</span>
-                        <span class="tag is-warning" v-if="tags.t2">#{{ tags.t2 }}</span>
-                        <span class="tag is-danger" v-if="tags.t3">#{{ tags.t3 }}</span>
-                    </div>
                 </div>
             </div>
         </div>
@@ -40,7 +35,6 @@ export default {
         "location",
         "description",
         "imgurl",
-        "tags",
         "fullData"
     ]   
 }

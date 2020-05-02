@@ -14,7 +14,7 @@
                 <div class="field has-addons">
                   <p class="control">
                     <a class="button is-static">
-                      I want to Volunteer in
+                      I'm looking for a pet in
                     </a>
                   </p>
                   <div class="control is-expanded">
@@ -64,18 +64,17 @@
 
           <div class="results mt-2">
             <ResultCard
-              v-for="(listing, index) in listings"
+              v-for="(pet, index) in pets"
               v-bind:key="index"
-              :name="listing.name"
-              :location="listing.location"
-              :description="listing.shortdes"
-              :imgurl="listing.imgurl"
-              :tags="listing.ctags"
-              :fullData = "listing"
+              :name="pet.petname"
+              :location="pet.location"
+              :description="pet.des"
+              :imgurl="pet.photo"
+              :fullData = "pet"
             />
             <center v-if="searchFail">
               <img class="searchfail-img" src="../assets/searchfail.gif">
-              <h1 class="title is-3 mb-0">Sorry! We couldn't find any oppotunity in {{ this.searchData.keyword}} :(</h1>
+              <h1 class="title is-3 mb-0">Sorry! We couldn't find any pets in {{ this.searchData.keyword}} :(</h1>
               <h1 class="title is-6 mt-1 searchfail">Try a different area and see!</h1>
             </center>
           </div>
@@ -88,7 +87,7 @@
 
 <script>
 /* eslint-disable */
-import { listingsRef } from '../firebase'
+import { petsRef } from '../firebase'
 /* eslint-disable no-unused-vars */
 import { ValidationProvider, ValidationObserver } from 'vee-validate'
 import { extend } from 'vee-validate'
@@ -103,7 +102,7 @@ export default {
   data () {
     return {
       searchFail: false,
-      listings: [],
+      pets: [],
       searchData: {
         keyword: ""
       }
@@ -115,18 +114,17 @@ export default {
     ValidationObserver
   },
   firebase: {
-    listings: listingsRef
+    pets: petsRef
   },
   methods: {
     search () {
-      listingsRef.orderByChild('location').equalTo(this.searchData.keyword).on('value',  (snapshot)=>{
-        //console.log(snapshot.val())
+      petsRef.orderByChild('location').equalTo(this.searchData.keyword).on('value',  (snapshot)=>{
         if(!snapshot.val()){
           this.searchFail = true
         }else{
           this.searchFail = false
         }
-        this.listings= snapshot.val()
+        this.pets= snapshot.val()
       })
     }
   }

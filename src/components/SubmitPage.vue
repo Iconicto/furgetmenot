@@ -168,7 +168,7 @@
                       <select v-model="formData.gender">
                         <option value="">Select a gender</option>
                         <option value="Male">Male</option>
-                        <option value="Femail">Female</option>
+                        <option value="Female">Female</option>
                       </select>
                       <h1 class="error-block mb-1">{{ errors[0] }}</h1>
                     </ValidationProvider>
@@ -185,6 +185,7 @@
                         <option value="">Select an option</option>
                         <option value="Male">Vaccined</option>
                         <option value="Femail">Not Vaccined</option>
+                        <option value="Dont Know">Don't Know</option>
                       </select>
                       <h1 class="error-block mb-1">{{ errors[0] }}</h1>
                     </ValidationProvider>
@@ -213,8 +214,9 @@
                     </span>
                   </label>
                 </div>
-                <progress :class="uploadPercentage == 100? 'progress is-success is-small': 'progress is-danger is-small'" :value.prop="uploadPercentage" 
+                <progress v-bind:class="{'progress is-success is-small': uploadPercentage == 100, 'progress is-success is-small': !uploadPercentage != 100}" :value.prop="uploadPercentage" 
                   max="100" v-if="imguploaded">
+                  
                 </progress>
               </div>
 
@@ -236,7 +238,7 @@
               <div class="field">
                 <label class="label">Any special remarks you would like to add</label>
                 <div class="control">
-                  <ValidationProvider rules="required" v-slot="{ errors }">
+                  <ValidationProvider rules="" v-slot="{ errors }">
                     <textarea
                       class="textarea"
                       placeholder="Remarks such as allergies, steralized, etc."
@@ -284,7 +286,7 @@
 <script>
 /* eslint-disable */ 
 /* eslint-disable no-unused-vars */
-import { listingsRef, storageRef, firebase } from '../firebase'
+import { petsRef, storageRef, firebase } from '../firebase'
 import axios from 'axios'
 /* eslint-disable no-unused-vars */
 import { ValidationProvider, ValidationObserver } from 'vee-validate'
@@ -414,36 +416,41 @@ export default {
     },
 
     submitData: function () {
-      if (!this.formData.imgurl) {
-        this.formData.imgurl =
-          'https://wizardly-visvesvaraya-500b32.netlify.app/favicon.png'
+
+      //Blank Data handling
+      if (!this.formData.photo) {
+        this.formData.photo =
+          '../assets/fallback.png'
+      }
+      if(!this.formData.breed){
+        this.formData.breed = "Not Specified."
+      }
+      if(!this.formData.age){
+        this.formData.age = "Not Specified."
+      }
+      if(!this.formData.remarks){
+        this.formData.remarks = "Not Specified."
       }
       
+      //Push into Firebase
+      let this_state = this;
+      petsRef.push(this.formData, function (error) {
+        if (error) {
+          alert('Something went wrong!')
+          this_state.notify = true
+          this_state.notifySuccess = false
+          
+        }else{
+          console.log("Firebase Successful")
+          this_state.notify = true
+          this_state.notifySuccess = true
+          this_state.formData = {
+            petname : '',breed : '',gender: '',age: '',des: '',vaccined: '',remarks: '',location: '',ownername: '',phone: '',email: '',photo: ''
+          }
+          window.scrollTo(0,0);
+        }
+      })
 
-      // //Push into Firebase
-      // listingsRef.push(this.formData, function (error) {
-      //   if (error) {
-      //     alert('Something went wrong!')
-      //   }else{
-      //     console.log("Firebase Successful")
-      //   }
-      // })
-
-      // //Send Whatsapp Message
-      // axios.post("https://us-central1-volunteer-me-9b8b3.cloudfunctions.net/sendWhatsapp", {
-      //     to: "+"+this.formData.contactno,
-      //     message: "Your listing "+this.formData.name+" has been added successfully!\nThank you for using VolunteerME!"
-      // }).then(callback => {
-      //     console.log("Successfully sent whatsapp message")
-      //     this.notify = true
-      //     this.notifySuccess = true
-      //     this.formData = {name: '',location: '',shortdes: '',fulldes: '',orgname: '',startdate: '',selection: '',role: '',email: '',contactno: '',imgurl: '',ctags: {t1: '',t2: '',t3: ''}}
-      //     window.scrollTo(0,0);
-      // }).catch(error =>{
-      //     console.log(error)
-      //     this.notify = true
-      //     this.notifySuccess = false
-      // })
     },
     hideNotification: function (){
       this.notify = false

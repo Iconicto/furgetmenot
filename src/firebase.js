@@ -13,6 +13,5 @@ const app = initializeApp({
 
 export const db = app.database()
 export const storageRef = app.storage().ref()
-export const listingsRef = db.ref('listings')
+export const petsRef = db.ref('pets')
 export const firebase = app
-//export const storageRef = storage.ref().child('pets')
