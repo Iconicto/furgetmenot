@@ -111,9 +111,19 @@ footer{
 .searchfail-img{
   height: 300px
 }
-
-
-
+.full-width{
+  width: 100% !important
+}
+.file-name-box{
+  border: 1px solid lightgrey;
+  padding: 5px;
+}
+.upload-img{
+  height: 100px
+}
+.upload-preview{
+  text-align: center;
+}
 
 
 @media only screen and (max-width: 769px) {

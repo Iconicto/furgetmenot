@@ -1,15 +1,18 @@
 import { initializeApp } from 'firebase'
 
 const app = initializeApp({
-    apiKey: process.env.FIREBASE_API_KEY,
-    authDomain: "volunteer-me-9b8b3.firebaseapp.com",
-    databaseURL: "https://volunteer-me-9b8b3.firebaseio.com",
-    projectId: process.env.FIREBASE_PROJECT_ID,
-    storageBucket: "volunteer-me-9b8b3.appspot.com",
-    messagingSenderId: "84184041346",
-    appId: "1:84184041346:web:60d40904278f4d08c5719b",
-    measurementId: "G-Z3MTDM2EFC"
+    apiKey: "AIzaSyB-MJJ5Iw8RpgJXPzhEtMhxJO3OsRckIWs",
+    authDomain: "furgetmenot-b0e6d.firebaseapp.com",
+    databaseURL: "https://furgetmenot-b0e6d.firebaseio.com",
+    projectId: "furgetmenot-b0e6d",
+    storageBucket: "furgetmenot-b0e6d.appspot.com",
+    messagingSenderId: "571796988398",
+    appId: "1:571796988398:web:17aac64603d7bc2bb9aeff",
+    measurementId: "G-ZHRH4PRZ9E"
 })
 
 export const db = app.database()
+export const storageRef = app.storage().ref()
 export const listingsRef = db.ref('listings')
+export const firebase = app
+//export const storageRef = storage.ref().child('pets')
