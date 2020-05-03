@@ -1,14 +1,14 @@
 import { initializeApp } from 'firebase'
 
 const app = initializeApp({
-    apiKey: "AIzaSyB-MJJ5Iw8RpgJXPzhEtMhxJO3OsRckIWs",
+    apiKey: process.env.FIREBASE_API_KEY,
     authDomain: "furgetmenot-b0e6d.firebaseapp.com",
     databaseURL: "https://furgetmenot-b0e6d.firebaseio.com",
-    projectId: "furgetmenot-b0e6d",
+    projectId: process.env.FIREBASE_PROJECT_ID,
     storageBucket: "furgetmenot-b0e6d.appspot.com",
-    messagingSenderId: "571796988398",
-    appId: "1:571796988398:web:17aac64603d7bc2bb9aeff",
-    measurementId: "G-ZHRH4PRZ9E"
+    messagingSenderId: process.env.FIREBASE_MSG_ID,
+    appId: process.env.FIREBASE_APPID,
+    measurementId: process.env.FIREBASE_MES_ID
 })
 
 export const db = app.database()
