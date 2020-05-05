@@ -14,14 +14,14 @@
                 <div class="field has-addons">
                   <p class="control">
                     <a class="button is-static">
-                      I want to Volunteer in
+                      I want to Adopt
                     </a>
                   </p>
                   <div class="control is-expanded">
                     <div class="select is-fullwidth">
                       <ValidationProvider rules="required" v-slot="{ errors }">
                         <select name="country" v-model="searchData.keyword">
-                          <option value="">Select a district</option>
+                          <option value="">Search</option>
                           <option value="Ampara">Ampara</option>
                           <option value="Country Wide">Country Wide</option>
                           <option value="Anuradhapura">Anuradhapura</option>

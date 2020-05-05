@@ -1,7 +1,7 @@
 <template>
   <div class="root">
     <div class="container has-text-centered">
-      <h1 class="title is-1 mb-0">Submit an oppotunity</h1>
+      <h1 class="title is-1 mb-0">Adopt a Pet!</h1>
       <div id="notification-class" class="notification mt-1 ml-2 mr-2" v-bind:class="{'is-success': notifySuccess, 'is-danger': !notifySuccess}" v-if="notify">
         <button class="delete" @click="hideNotification()"></button>
         <p v-if="notifySuccess">Your event submitted successfully!</p>
@@ -10,30 +10,32 @@
       <div class="columns mt-2">
         <div class="column is-6">
           <img src="../assets/logo-trans.png" style="height: 100px">
-          <h1 class="title is-6 mb-0 text-primary mt-1">Take me home!</h1>
+          <h1 class="title is-6 mb-0 text-primary mt-1">Take me home!</h1><br>
           <h1 class="title is-4 mb-1 mt-0">Giving your pet for adoption</h1>
 
           <div class="content conditions">
-            <h1 class="title is-5 mb-1 mt-2">What can you submit?</h1>
+            <h1 class="title is-5 mb-1 mt-2">Why you should adopt a pet?</h1>
             <p>
               <ul>
-                <li>To submit an oppotunity, you have to be the organizer or a representative of the organization that is hosting the event.</li>
-                <li>You can submit almost any oppotunity as long as they don't involve in anything illegal.<br>(Eg: Submitting an oppotunity that is
-                    only applicable for a certain race)
-                </li>
-                <li>If the volunteering tasks involved with a certain risk, please be kind enought to mention them in the description.</li>
+                <li>If you're trying to save a life.</li>
+                <li>And you're going to get a great animal.</li>
+                <li>And it's going to cost you less.</li>
+                <li>Because of the bragging rights.</li>
+                <li>Since all pets are good for your health, but adopts give an extra boost.</li>
+                <li>Since it allows more than only one animal to adopt.</li>
+                <li>If you're going to change the entire life of a homeless animal.</li>
               </ul>
             </p>
 
-            <h1 class="title is-5 mb-1 mt-2">Types of submissions</h1>
+            <h1 class="title is-5 mb-1 mt-2">Love your pets even more...</h1>
             <ul>
-              <li>Open-Source software projects</li>
-              <li>Animal welfare projects</li>
-              <li>Environmantal preservation projects</li>
-              <li>Social projects</li>
-              <li>Projects on helping differently abled</li>
-              <li>Community based entertainment projects</li>
-              <li>Etc *wink</li>
+              <li>Pets are going to bring out the best of you.</li>
+              <li>They help you to grow your emotional intelligence.</li>
+              <li>Now you're going to have more friends.</li>
+              <li>They are improving your confidence.</li>
+              <li>They're making you calmer.</li>
+              <li>They're bringing order to your life.</li>
+              <li>And help you develop a stronger, healthier relationship.</li>
             </ul>
           </div>
           <h1 class="title is-4 mb-1 mt-0">OOOO <strong>Woof!</strong></h1>
@@ -57,6 +59,21 @@
                   </ValidationProvider>
                 </div>
               </div>
+                <div class="field">
+                <label class="label">Owner's Email</label>
+                <div class="control">
+                  <ValidationProvider rules="required" v-slot="{ errors }">
+                    <input
+                      class="input"
+                      type="text"
+                      placeholder="Owner's Email"
+                      v-model="formData.orgname"
+                      required
+                    />
+                    <span class="error-block">{{ errors[0] }}</span>
+                  </ValidationProvider>
+                </div>
+              </div>
               <div class="field">
                 <label class="label">Pet's Name</label>
                 <div class="control">
@@ -72,18 +89,75 @@
                   </ValidationProvider>
                 </div>
               </div>
-              <div class="field">
-                <label class="label">Owner's Email</label>
+                <div class="field">
+                <label class="label">Pet's Sex</label>
                 <div class="control">
-                  <ValidationProvider
-                    rules="required|email"
-                    v-slot="{ errors }"
-                  >
+                  <ValidationProvider rules="required" v-slot="{ errors }">
                     <input
                       class="input"
                       type="text"
-                      placeholder="Owner's Email"
-                      v-model="formData.email"
+                      placeholder="Pet's Sex"
+                      v-model="formData.orgname"
+                      required
+                    />
+                    <span class="error-block">{{ errors[0] }}</span>
+                  </ValidationProvider>
+                </div>
+              </div>
+                <div class="field">
+                <label class="label">Pet's Age</label>
+                <div class="control">
+                  <ValidationProvider rules="required" v-slot="{ errors }">
+                    <input
+                      class="input"
+                      type="text"
+                      placeholder="Pet's Age"
+                      v-model="formData.orgname"
+                      required
+                    />
+                    <span class="error-block">{{ errors[0] }}</span>
+                  </ValidationProvider>
+                </div>
+              </div>
+               <div class="field">
+                <label class="label">Pet's Breed</label>
+                <div class="control">
+                  <ValidationProvider rules="required" v-slot="{ errors }">
+                    <input
+                      class="input"
+                      type="text"
+                      placeholder="Pet's Breed"
+                      v-model="formData.orgname"
+                      required
+                    />
+                    <span class="error-block">{{ errors[0] }}</span>
+                  </ValidationProvider>
+                </div>
+              </div>
+                <div class="field">
+                <label class="label">Pet's Size</label>
+                <div class="control">
+                  <ValidationProvider rules="required" v-slot="{ errors }">
+                    <input
+                      class="input"
+                      type="text"
+                      placeholder="Pet's Size"
+                      v-model="formData.orgname"
+                      required
+                    />
+                    <span class="error-block">{{ errors[0] }}</span>
+                  </ValidationProvider>
+                </div>
+              </div>
+                <div class="field">
+                <label class="label">Pet's Color</label>
+                <div class="control">
+                  <ValidationProvider rules="required" v-slot="{ errors }">
+                    <input
+                      class="input"
+                      type="text"
+                      placeholder="Pet's Color"
+                      v-model="formData.orgname"
                       required
                     />
                     <span class="error-block">{{ errors[0] }}</span>
@@ -118,21 +192,6 @@
                       type="text"
                       placeholder="Start Date (DD-MM-YYY)"
                       v-model="formData.startdate"
-                      required
-                    />
-                    <span class="error-block">{{ errors[0] }}</span>
-                  </ValidationProvider>
-                </div>
-              </div>
-              <div class="field">
-                <label class="label">Banner Image URL</label>
-                <div class="control">
-                  <ValidationProvider :rules="{ regex: /^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/ }" v-slot="{ errors }">
-                    <input
-                      class="input"
-                      type="text"
-                      placeholder="Recomended 1x1"
-                      v-model="formData.imgurl"
                       required
                     />
                     <span class="error-block">{{ errors[0] }}</span>
@@ -184,7 +243,7 @@
                   <ValidationProvider rules="required" v-slot="{ errors }">
                     <textarea
                       class="textarea"
-                      placeholder="A brief description about the project"
+                      placeholder="A brief description about the pet"
                       v-model="formData.shortdes"
                       required
                     ></textarea>
@@ -198,38 +257,14 @@
                   <ValidationProvider rules="required|min:250" v-slot="{ errors }">
                     <textarea
                       class="textarea"
-                      placeholder="The detailed full description about the project"
+                      placeholder="The detailed full description about the pet"
                       v-model="formData.fulldes"
                       required
                     ></textarea>
                     <span class="error-block">{{ errors[0] }}</span>
                   </ValidationProvider>
                 </div>
-              </div>
-              <div class="field">
-                <label class="label">Volunteer Role</label>
-                <div class="control">
-                  <ValidationProvider rules="required" v-slot="{ errors }">
-                    <textarea
-                      class="textarea"
-                      placeholder="What does the volunteer has to do in the project?"
-                      v-model="formData.role"
-                      required
-                    ></textarea>
-                    <span class="error-block">{{ errors[0] }}</span>
-                  </ValidationProvider>
-                </div>
-              </div>
-              <div class="field">
-                <label class="label">Selection Criteria (If Any)</label>
-                <div class="control">
-                  <textarea
-                    class="textarea"
-                    placeholder="If there are any selections, tell us how would you select volunteers."
-                    v-model="formData.selection"
-                  ></textarea>
-                </div>
-              </div>
+              </div>  
               <div class="field">
                 <label class="label mb-0">Tags</label>
                 <span class="mt-0 error-block text-black">Max 3 tags. Hit enter to confirm a tag</span>
