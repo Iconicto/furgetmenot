@@ -14,18 +14,14 @@
                 <div class="field has-addons">
                   <p class="control">
                     <a class="button is-static">
-<<<<<<< HEAD
-                      I want to Adopt
-=======
                       I'm looking for a pet in
->>>>>>> 7579fc221e54e3c10c3631ce1e6096dc371afa49
                     </a>
                   </p>
                   <div class="control is-expanded">
                     <div class="select is-fullwidth">
                       <ValidationProvider rules="required" v-slot="{ errors }">
                         <select name="country" v-model="searchData.keyword">
-                          <option value="">Search</option>
+                          <option value="">Select a district</option>
                           <option value="Ampara">Ampara</option>
                           <option value="Country Wide">Country Wide</option>
                           <option value="Anuradhapura">Anuradhapura</option>

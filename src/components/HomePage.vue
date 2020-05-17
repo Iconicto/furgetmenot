@@ -45,7 +45,7 @@
                 Taking care of a pet can provide a sense of purpose and fulfillment, and even lessen the loneliness of all age groups.
                 With an active dog, you can go out for a walk, or even go to a dog park to get to know people. Research suggests that the development of the stress hormone can  be decreased by petting a dog. Your pet will always be there for you, so you would never be afraid.
                 Along with psychological, mental and physical rewards, animals deliver unconditional affection.<br><br>
-                We see you as part of our extended family as you are a customer of <strong>FurgetMeNot</strong>. 
+                We see you as part of our extended family as you are a member of <strong>FurgetMeNot</strong>. 
               </p>
             </div>
           </div>
@@ -54,14 +54,14 @@
         <section class="mt-4">
           <h1 class="title is-3 mb-1">Save the paws of the world!</h1>
           <h1 class="title is-6 mt-0 mb-2">
-            Sometimes the littlest things take up the most room in your heart. Spay it forward!
+            Sometimes the little things take up the most room in your heart. Spay it forward!
           </h1>
           <nav class="level mt-3">
             <div class="level-item has-text-centered">
               <div>
                 <img class="level-gh" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" style="height: 100px">
                 <center>
-                  <a href="https://github.com/Suvink/volunteer-me" target="__blank">
+                  <a href="" target="__blank">
                     <button class="button is-black mt-1"><i class="fab fa-github home-icon"></i> View on Github</button>
                   </a>
                 </center>
@@ -81,7 +81,7 @@
               <div>
                 <img class="level-dev" src="https://res.cloudinary.com/practicaldev/image/fetch/c_scale,fl_progressive,q_auto,w_190/f_auto/https://practicaldev-herokuapp-com.freetls.fastly.net/assets/rainbowdev.svg" style="height: 100px">
                 <center>
-                  <a href="https://dev.to/suvink/volunteerme-all-volunteering-in-one-place-2c06" target="__blank">
+                  <a href="" target="__blank">
                     <button class="button is-warning mt-1 btn-dev"><i class="fab fa-dev home-icon"></i> View on Dev Community</button>
                   </a>
                 </center>
