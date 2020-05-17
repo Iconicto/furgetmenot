@@ -1,15 +1,16 @@
 import { initializeApp } from 'firebase'
 
 const app = initializeApp({
-    apiKey: process.env.VUE_APP_FIREBASE_API_KEY,
-    authDomain: process.env.VUE_APP_FIREBASE_AUTH_DOMAIN,
-    databaseURL: process.env.VUE_APP_FIREBASE_DBURL,
-    projectId: process.env.VUE_APP_FIREBASE_PROJECT_ID,
-    storageBucket: process.env.VUE_APP_FIREBASE_STORAGE_BKT,
-    messagingSenderId: process.env.VUE_APP_FIREBASE_MSG_ID,
-    appId: process.env.VUE_APP_FIREBASE_APPID,
-    measurementId: process.env.VUE_APP_FIREBASE_MES_ID
+    apiKey: process.env.VUE_APP_FIREBASEAPIKEY,
+    authDomain: process.env.VUE_APP_FIREBASEAUTHDOMAIN,
+    databaseURL: process.env.VUE_APP_FIREBASEDBURL,
+    projectId: process.env.VUE_APP_FIREBASEPROJECTID,
+    storageBucket: process.env.VUE_APP_FIREBASESTORAGEBKT,
+    messagingSenderId: process.env.VUE_APP_FIREBASEMSGID,
+    appId: process.env.VUE_APP_FIREBASEAPPID,
+    measurementId: process.env.VUE_APP_FIREBASEMESID
 })
+
 
 export const db = app.database()
 export const storageRef = app.storage().ref()

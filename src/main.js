@@ -6,7 +6,7 @@ import router from './router'
 import './firebase'
 import { rtdbPlugin } from 'vuefire'
 import Footer from './components/Footer.vue'
-
+require('dotenv').config();
 
 
 
