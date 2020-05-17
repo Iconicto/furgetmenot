@@ -1,4 +1,4 @@
-<a  href="">
+<a  href="furgetmenot.suvink.me">
 <center>
 <img src="https://furgetmenot.netlify.app/img/logo-trans.e1698e73.png">
 </center>
@@ -43,7 +43,7 @@ After the above requirements have been met:
 <b>1. Clone this repository and `cd` into it</b>
 
 ```bash
-git clone https://github.com/Suvink/volunteer-me.git
+git clone https://github.com/Iconicto/furgetmenot.git
 cd furgetmenot
 ```
 <br>
