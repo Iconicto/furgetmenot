@@ -681,7 +681,7 @@ export default {
       //Blank Data handling
       if (!this.formData.photo) {
         this.formData.photo =
-          '../assets/fallback.png'
+          'https://furgetmenot.suvink.me/fallback.png'
       }
       if(!this.formData.breed){
         this.formData.breed = "Not Specified."
