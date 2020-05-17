@@ -8,17 +8,9 @@
               <img src="https://thumbs.gfycat.com/GroundedPresentAstrangiacoral-small.gif">
             </div>
             <div class="column is-6">
-              <h1 class="title is-1 mb-0 animated fadeInUp">Pets are human too!</h1>
-              <h1 class="title is-6 mt-1 mb-2">All the volunteering oppotunities in one place!</h1>
-              <div class="tags home-tags">
-                <span class="tag is-primary is-medium mr-1 ml-1"><i class="fas fa-hands-helping home-icon"></i>Volunteering</span>
-                <span class="tag is-warning is-medium mr-1 ml-1"><i class="fas fa-hippo home-icon"></i>Animal Welfare</span>
-                <span class="tag is-black is-medium mr-1 ml-1"><i class="fab fa-github home-icon"></i>Github</span>
-              </div>
-              <div class="tags home-tags">
-                <span class="tag is-danger is-medium mr-1 ml-1"><i class="fas fa-school home-icon"></i>Teaching</span>
-                <span class="tag is-success is-medium mr-1 ml-1"><i class="fas fa-ambulance home-icon"></i>First Responders</span>
-              </div>
+              <h1 class="title is-1 mb-0 animated fadeInUp">Pets are human too!</h1><br><br>
+              <img src="../assets/logo-trans.png" width="400">
+              <h1 class="title is-6 mb-0 text-primary mt-1">Adopt, Rescue, Love until the end of time!</h1>
             </div>
           </div>
         </section>
@@ -43,29 +35,33 @@
             </div>
             <div class="column is-6">
               <p class="about-des">
-                Volunteer<strong>ME</strong> is an open-source online platform for volunteering.
-                Sri Lanka is one of the best places to volunteer in the world. In fact Sri Lanka has 
-                the highest rate of volunteering in the world according to the UN Volunteers.<br><br>
-                But finding a project to volunteer is not so easy. Mainly because different hosts publish 
-                their projects on their own websites and facebook pages and they are scattered everywhere. 
-                Volunteer<strong>ME</strong> a common place to list down all the volunteering opportunities in 
-                Sri Lanka so that anyone could easily find and work in projects.
+                Do you value your pet like a family member?   You do, of course. That is why you are here! And we are delighted that you've chosen us! <br><br>
+                You can meet your next best friend and save a pet through animal adoption. 
+                Last year over 6,000,000 dogs & cats were killed on US roads. Countless variety of animals have got injured on the road worldwide, and are struggling to survive every single day. So this is the major reason we are here for them. We are a community of animal lovers and pet advocates. 
+                We aim to provide everybody with exposure at reasonable rates to good quality, natural remedies.<br><br>
+                Sharing your life with a pet may be a rewarding activity, but it also requires taking control of your capabilities for life.
+                The ownership of a pet has so many benefits. If you have this partner everywhere you are, your social life would boost, keep you healthy, involved and without tension. 
+                When you love a companion you feel better.
+                Taking care of a pet can provide a sense of purpose and fulfillment, and even lessen the loneliness of all age groups.
+                With an active dog, you can go out for a walk, or even go to a dog park to get to know people. Research suggests that the development of the stress hormone can  be decreased by petting a dog. Your pet will always be there for you, so you would never be afraid.
+                Along with psychological, mental and physical rewards, animals deliver unconditional affection.<br><br>
+                We see you as part of our extended family as you are a member of <strong>FurgetMeNot</strong>. 
               </p>
             </div>
           </div>
         </section>
 
         <section class="mt-4">
-          <h1 class="title is-3 mb-1">It's Open-Source!</h1>
+          <h1 class="title is-3 mb-1">Save the paws of the world!</h1>
           <h1 class="title is-6 mt-0 mb-2">
-            Got an idea to improve Volunteer<strong>ME</strong>? Go ahead and send us a Pull Request!
+            Sometimes the little things take up the most room in your heart. Spay it forward!
           </h1>
           <nav class="level mt-3">
             <div class="level-item has-text-centered">
               <div>
                 <img class="level-gh" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" style="height: 100px">
                 <center>
-                  <a href="https://github.com/Suvink/volunteer-me" target="__blank">
+                  <a href="" target="__blank">
                     <button class="button is-black mt-1"><i class="fab fa-github home-icon"></i> View on Github</button>
                   </a>
                 </center>
@@ -85,7 +81,7 @@
               <div>
                 <img class="level-dev" src="https://res.cloudinary.com/practicaldev/image/fetch/c_scale,fl_progressive,q_auto,w_190/f_auto/https://practicaldev-herokuapp-com.freetls.fastly.net/assets/rainbowdev.svg" style="height: 100px">
                 <center>
-                  <a href="https://dev.to/suvink/volunteerme-all-volunteering-in-one-place-2c06" target="__blank">
+                  <a href="" target="__blank">
                     <button class="button is-warning mt-1 btn-dev"><i class="fab fa-dev home-icon"></i> View on Dev Community</button>
                   </a>
                 </center>

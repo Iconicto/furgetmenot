@@ -2,7 +2,7 @@
   <footer class="footer mb-1">
   <div class="content has-text-centered">
     <p>
-      Made with ♥️ by <a href="https://www.suvink.me" target="__blank">Suvink</a>
+      Made with ♥️ by <a href="https://www.iconicto.com" target="__blank">Iconicto</a>
     </p>
   </div>
 </footer>

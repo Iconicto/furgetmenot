@@ -10,30 +10,32 @@
       <div class="columns mt-2">
         <div class="column is-6">
           <img src="../assets/logo-trans.png" style="height: 100px">
-          <h1 class="title is-6 mb-0 text-primary mt-1">Take me home!</h1>
+          <h1 class="title is-6 mb-0 text-primary mt-1">Take me home!</h1><br>
           <h1 class="title is-4 mb-1 mt-0">Giving your pet for adoption</h1>
 
           <div class="content conditions">
-            <h1 class="title is-5 mb-1 mt-2">What can you submit?</h1>
+            <h1 class="title is-5 mb-1 mt-2">Why you should adopt a pet?</h1>
             <p>
               <ul>
-                <li>To submit an oppotunity, you have to be the organizer or a representative of the organization that is hosting the event.</li>
-                <li>You can submit almost any oppotunity as long as they don't involve in anything illegal.<br>(Eg: Submitting an oppotunity that is
-                    only applicable for a certain race)
-                </li>
-                <li>If the volunteering tasks involved with a certain risk, please be kind enought to mention them in the description.</li>
+                <li>If you're trying to save a life.</li>
+                <li>And you're going to get a great animal.</li>
+                <li>And it's going to cost you less.</li>
+                <li>Because of the bragging rights.</li>
+                <li>Since all pets are good for your health, but adopts give an extra boost.</li>
+                <li>Since it allows more than only one animal to adopt.</li>
+                <li>If you're going to change the entire life of a homeless animal.</li>
               </ul>
             </p>
 
-            <h1 class="title is-5 mb-1 mt-2">Types of submissions</h1>
+            <h1 class="title is-5 mb-1 mt-2">Love your pets even more...</h1>
             <ul>
-              <li>Open-Source software projects</li>
-              <li>Animal welfare projects</li>
-              <li>Environmantal preservation projects</li>
-              <li>Social projects</li>
-              <li>Projects on helping differently abled</li>
-              <li>Community based entertainment projects</li>
-              <li>Etc *wink</li>
+              <li>Pets are going to bring out the best of you.</li>
+              <li>They help you to grow your emotional intelligence.</li>
+              <li>Now you're going to have more friends.</li>
+              <li>They are improving your confidence.</li>
+              <li>They're making you calmer.</li>
+              <li>They're bringing order to your life.</li>
+              <li>And help you develop a stronger, healthier relationship.</li>
             </ul>
           </div>
           <h1 class="title is-4 mb-1 mt-0">OOOO <strong>Woof!</strong></h1>
